@@ -9,8 +9,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class GUI implements ActionListener {
+
     public static void main(String[] args) {
-        
+        // Test
         JPanel panel = new JPanel();
         JFrame frame = new JFrame();
         frame.setSize(300, 180);
