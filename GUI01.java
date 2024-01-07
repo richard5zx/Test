@@ -8,7 +8,7 @@ import javax.swing.JTextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GUI implements ActionListener {
+public class GUI01 implements ActionListener {
     private static JLabel userLabel;
     private static JTextField userText;
     private static JLabel passLabel;
@@ -47,7 +47,7 @@ public class GUI implements ActionListener {
         // Submit button part
         button = new JButton(" Login");
         button.setBounds(80, 90, 80, 25);
-        button.addActionListener(new GUI());
+        button.addActionListener(new GUI01());
         panel.add(button);
         
         success = new JLabel("");

@@ -4,10 +4,10 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 // Creating a frame in a class outside the main method
-public class GUI3 extends JFrame {
+public class GUI03 extends JFrame {
 
     // Constructor
-    GUI3() {
+    GUI03() {
         this.setTitle("Playing around with JFrame");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
@@ -23,7 +23,7 @@ public class GUI3 extends JFrame {
     }
 
     public static void main(String[] args) {
-        GUI3 frame = new GUI3(); // can also use "new GUI3()" if you don't plan to make any changes
+        GUI03 frame = new GUI03(); // can also use "new GUI3()" if you don't plan to make any changes
 
 
     }

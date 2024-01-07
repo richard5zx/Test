@@ -3,7 +3,7 @@ import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
-public class GUI2 {
+public class GUI02 {
     public static void main(String[] args) {
         JFrame frame = new JFrame(); // creates a frame
         frame.setTitle("Playing around with JFrame"); // Set title of frame
