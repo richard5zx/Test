@@ -1,3 +1,4 @@
+package GUI;
 import java.awt.Color;
 
 import javax.swing.ImageIcon;
@@ -13,7 +14,7 @@ public class GUI02 {
         frame.setVisible(true); // make frame visible
         
         // Change Icon of frame (Image from www.flaticon.com)
-        ImageIcon image = new ImageIcon("resources/startup.png");
+        ImageIcon image = new ImageIcon("GUI/resources/startup.png");
         frame.setIconImage(image.getImage());
 
         // Change background color of frame

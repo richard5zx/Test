@@ -1,3 +1,4 @@
+package GUI;
 import java.awt.Color;
 
 import javax.swing.ImageIcon;
@@ -14,11 +15,11 @@ public class GUI03 extends JFrame {
         this.setSize(420, 420);
         this.setVisible(true);
         
-        // ICON
+        // Change ICON
         ImageIcon image = new ImageIcon("resources/startup.png");
         this.setIconImage(image.getImage());
 
-        //Background
+        // Change background color
         this.getContentPane().setBackground(new Color(123, 50, 250));
     }
 
