@@ -25,7 +25,5 @@ public class GUI03 extends JFrame {
 
     public static void main(String[] args) {
         GUI03 frame = new GUI03(); // can also use "new GUI3()" if you don't plan to make any changes
-
-
     }
 }

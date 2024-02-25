@@ -2,9 +2,11 @@ package GUI;
 import java.awt.Color;
 import java.awt.Font;
 
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.border.Border;
 
 public class GUI04 {
     public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class GUI04 {
         // Create frame
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(525, 525);
+        // frame.setSize(525, 525);
         frame.setVisible(true);
         
         // Create label
@@ -42,5 +44,25 @@ public class GUI04 {
         // Set background
         label.setBackground(Color.BLACK);
         label.setOpaque(true);
+
+        // Create Border
+        Border border = BorderFactory.createLineBorder(Color.GREEN, 3);
+        label.setBorder(border);
+
+        // Move image relative to the border
+        // Set position of icon+ text within label
+        label.setVerticalAlignment(JLabel.CENTER);
+        label.setHorizontalAlignment(JLabel.CENTER);
+
+        // Set bounds
+        //label.setBounds(0, 0 , 250, 250); // set x , y position within frame as well as dimensions
+        //frame.setLayout(null);
+
+        // Resize frame to accomodate all components you have
+        // so you dont need to set bounds or set size.
+        // Very useful function
+        // if you wanna youse pack make sure to add all components before using pack
+        frame.pack();
+
     }
 }
