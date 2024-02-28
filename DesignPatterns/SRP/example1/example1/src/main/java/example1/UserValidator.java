@@ -5,6 +5,9 @@ import java.util.regex.Pattern;
 
 public class UserValidator {
     
+    public boolean validateUser(User user) {
+        return isValidUser(user);
+    }
     // Validates the user object
     public boolean isValidUser(User user) {
         if(!isPresent(user.getName())) {
