@@ -1,4 +1,4 @@
-package example1;
+package example01;
 
 import java.io.IOException;
 
@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class UserController {
 
     UserPersistenceService persistenceService = new UserPersistenceService();
-    
+
     //Create a new user
     public String createUser(String userJson) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
