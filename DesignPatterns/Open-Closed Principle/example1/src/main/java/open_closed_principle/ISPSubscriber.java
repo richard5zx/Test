@@ -2,10 +2,12 @@ package open_closed_principle;
 
 import java.util.List;
 
+// Open for modification
 public class ISPSubscriber extends Subscriber {
 
     private long freeUsage;
 
+    @Override
     public double calculateBill() {
         List<InternetSessionHistory.InternetSession> sessions = InternetSessionHistory.getCurrentSessions(subscriberId);
         long totalData = sessions.stream().mapToLong(InternetSessionHistory.InternetSession::getDataUsed).sum();

@@ -1,8 +1,8 @@
 package open_closed_principle;
 
+// Base class - closed for modification
+public abstract class Subscriber {
 
-abstract class Subscriber {
-    
     protected Long subscriberId;
 
     protected String address;
@@ -67,5 +67,7 @@ abstract class Subscriber {
         this.baseRate = baseRate;
     }
 
+    // Methods
+    // This means open for extension
     public abstract double calculateBill();
 }
