@@ -1,24 +1,24 @@
 package liskov_substitution_principle;
 
-public class Square extends Rectangle {
+public class Square implements Shape {
 	
-	public Square(int side) {
-		super(side, side);
-	}
-	
-	@Override
-	public void setWidth(int width) {
-		setSide(width);
-	}
+	private int side;
 
-	@Override
-	public void setHeight(int height) {
-		setSide(height);
+	public Square(int side) {
+		this.side = side;
 	}
 
 	public void setSide(int side) {
-		super.setWidth(side);
-		super.setHeight(side);
+		this.side = side;
+	}
+
+	public int getSide() {
+		return side;
+	}
+
+	@Override
+	public int computeArea() {
+		return side*side;
 	}
 
 }

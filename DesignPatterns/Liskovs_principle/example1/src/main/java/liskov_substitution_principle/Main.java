@@ -11,8 +11,6 @@ public class Main {
 		System.out.println(square.computeArea());
 		
 		useRectangle(rectangle);
-		
-		useRectangle(square);
 
 	}
 
@@ -21,6 +19,6 @@ public class Main {
 		rectangle.setWidth(30);
 
 		assert rectangle.getHeight() == 20 : "Height Not equal to 20";
-		assert rectangle.getWidth() == 40 : "Width Not equal to 30";
+		assert rectangle.getWidth() == 30 : "Width Not equal to 30";
 	}
 }

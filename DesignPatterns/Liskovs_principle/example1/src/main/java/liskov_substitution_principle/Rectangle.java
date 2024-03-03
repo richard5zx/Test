@@ -1,6 +1,6 @@
 package liskov_substitution_principle;
 
-public class Rectangle {
+public class Rectangle implements Shape {
 
 	private int width;
 	
